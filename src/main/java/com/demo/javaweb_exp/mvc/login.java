@@ -44,7 +44,7 @@ public class login extends HttpServlet {
             //处理结果
             if(result.next())flag=true;
         } catch (SQLException e) {
-            System.out.println("query error!");
+            System.out.println("login error!");
             e.printStackTrace();
         } finally {
             jdbc.realse(connection,statement,result);
