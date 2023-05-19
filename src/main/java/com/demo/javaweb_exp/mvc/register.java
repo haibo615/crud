@@ -3,6 +3,7 @@ package com.demo.javaweb_exp.mvc;
 import com.demo.javaweb_exp.utils.jdbc;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +16,7 @@ import java.sql.SQLException;
 /**
  *user--register
  */
+@WebServlet("/register")
 public class register extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -16,5 +16,12 @@
     密码：<input type="password" name="pswd">
     <button>登录</button>
 </form>
+<button id="register">注册</button>
 </body>
+<script>
+    var btn = document.querySelector("#register");
+    btn.addEventListener("click",function () {
+        window.location.href="register.jsp"
+    })
+</script>
 </html>

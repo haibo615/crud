@@ -11,6 +11,10 @@
     <title>Register</title>
 </head>
 <body>
-
+<form action="${pageContext.request.contextPath}/register">
+    姓名：<input type="text" name="name">
+    密码：<input type="password" name="pswd">
+    <button>注册</button>
+</form>
 </body>
 </html>
